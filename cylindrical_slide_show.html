@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Photos by Adi Levin</title>    
+    <meta name="description" content="Cylindrical Slide show" />
+    <meta name="author" content="Adi Levin" />
+    <link href="impress-adi.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<audio src="audio/SiyaishayaIngoma.m4a" autoplay></audio>
+<div id="impress" data-transition-duration="3000"></div>
+	
+<script src="impress-adi.js"></script>
+<script src="jquery-2.1.1.js"></script>
+<script src="list_of_images.js"></script>
+<script src="image_loader.js"></script>
+<script src="cylindrical.js"></script>
+<script>
+$(document).ready(function() {
+	impress().init();
+})
+</script>
+</body>
+</html>
