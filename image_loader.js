@@ -13,8 +13,8 @@ function create_image_loader(index)
 			return;
 		}
 		var div = $('<div class="img_container"></div>').appendTo(steps[i]);
-		var img_path=list_of_images[i];
-		div.css("background-image",'url(file:///'+img_path+')');
+		var img_url = base_url_for_images + '/' + list_of_images[i];
+		div.css("background-image",'url(' + img_url +')');
 	};
 }
 
